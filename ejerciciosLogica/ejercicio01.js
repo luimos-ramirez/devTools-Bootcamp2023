@@ -1,4 +1,7 @@
 function next_pal(numero){ 
+    if(numero<=0){
+        return "Debe ingresar un numero entero positivo."
+    }
     let siguienteNumero = numero+1;
     while (numero > 0) { 
         let siguienteNumeroInvertido = siguienteNumero.toString().split("").reverse().join("");
@@ -9,7 +12,7 @@ function next_pal(numero){
     }
     return siguienteNumero;
 }
-console.log(next_pal(212));
+console.log(next_pal(11));
 
 
 
