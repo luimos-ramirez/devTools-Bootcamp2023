@@ -1,15 +1,17 @@
 function fizzBuzz(number){
+    const result = [];
     for(var i   = 0; i  <= number; i++ ){ 
         if (i % 3===0 && i % 5===0) {
-            console.log("FizzBuzz");
+            result[i] = "FizzBuzz";
         }else if (i % 3 === 0) {
-            console.log("Fizz");
+            result[i] = "Fizz";
         }else if (i % 5 === 0) {   
-            console.log("Buzz");
+            result[i] = "Buzz";
         }
         else{
-            console.log(i);
+            result[i] = `${i}`;
         }
     }
+    return result.join("\n");
 }
-fizzBuzz(15);
+console.log(fizzBuzz(15));
