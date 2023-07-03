@@ -1,5 +1,5 @@
 function createPhoneNumber(arrayNumber){
-    if(arrayNumber.length < 10){
+    if(arrayNumber.length !== 10){
       return "Debe ingresar una longitud valida."
     }
     if(arrayNumber.filter(number => number > 9 || number < 0 || typeof number !== 'number').length > 0){
